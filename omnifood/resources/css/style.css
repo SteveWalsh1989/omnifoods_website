@@ -1,3 +1,7 @@
+
+/*-----------------------
+         Basics
+-----------------------*/
 * {
     margin: 0;
     padding:0;
@@ -16,11 +20,6 @@ html {
     text-rendering: optimizeLegibility; /* quicker text rendering */
 }
 
-.row {
-    max-width: 30114000px;
-    margin: 0 auto; /* center */
-
-}
 
 header {
     background-image: linear-gradient(rgb(0, 0, 0, 0.7) ,rgba(0, 0, 0, 0.7)), url(img/hero.jpg); /* transparent black gradient over the main image to darken */
@@ -30,9 +29,17 @@ header {
 }
 
 
-/*
-    Header
-*/
+.row {
+    max-width: 30114000px;
+    margin: 0 auto; /* center */
+
+}
+
+
+
+/*-----------------------
+         Header
+-----------------------*/
 .hero-text-box {
     position: absolute;
     width: 1140px;
@@ -41,7 +48,41 @@ header {
     transform: translate(-50%, -50%);
 }
 
+.logo {
+    height: 200;
+    width: auto;
+    float: left;
+    margin: 5px 5px;
+}
 
+
+.main-nav{
+    float:right;
+    list-style: none;
+
+}
+
+.main-nav li{
+    color:white;
+    display: inline-block;
+    margin: 5px 20px;
+}
+
+.main-nav  li a {
+    color: white;
+    text-decoration: none;
+
+
+}
+
+/*---------------------------------------------
+          Reuseable components 
+---------------------------------------------*/
+
+
+/*-----------------------
+         heading
+-----------------------*/
 h1 {
     margin: 0 0 20px 0 ;
     color: white;
@@ -52,6 +93,12 @@ h1 {
     word-spacing: 4px;
 }
 
+
+
+
+/*-----------------------
+         buttons
+-----------------------*/
 .btn:link,
 .btn:visited{
     display: inline-block ;
