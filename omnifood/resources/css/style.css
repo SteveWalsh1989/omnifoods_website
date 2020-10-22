@@ -232,6 +232,42 @@ h2:after {
 }
 
 
+.icon-small {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: rgb(221, 116, 18);
+
+    /* align tips 
+    line-height: 120%;
+    vertical-algin: middle;
+    martin-top: -2px;
+    */ 
+}
+
+
+
+
+/*-----------------------
+    links 
+-----------------------*/
+a:link,
+a:visited {
+    color: rgb(221, 116, 18);
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid  rgb(221, 116, 18);
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+    color: #555;
+    border-bottom: 1px solid transparent;
+}
+
+
 /*-----------------------
     meals gallery 
 -----------------------*/
@@ -278,9 +314,9 @@ h2:after {
 -----------------------*/
 .section-steps {
     padding: 80px 1%;
+    background-color: #f4f4f4;
+
 }
-
-
 
 
 .steps-box:first-child {
@@ -293,8 +329,6 @@ h2:after {
     padding-left: 3%;
     text-align: left;
     margin-top: 70px;
-
-
 }
 
 .apps-screen {
@@ -312,16 +346,21 @@ h2:after {
 
 .work-steps div {
     color: rgb(221, 116, 18);
-    font-size: 150%;
-    height: 54px;
+
     width: 54px;
     border: 2px solid  rgb(221, 116, 18);
     border-radius: 50%;
     display: inline-block;
     text-align: center;
     margin-right: 25px;
+    font-size: 150%;
+    height: 54px;
     float: left;
     padding: 5px;
+}
+
+.work-steps p {
+    width: 50%;
 }
 
 .btn-app:link,
@@ -333,4 +372,66 @@ h2:after {
     height: 50px;
     width: auto;
     margin-right: 10px;
+}
+
+/*-----------------------
+     Cities
+-----------------------*/
+.section-cities {
+    padding: 80px 1%;
+}
+
+
+.box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.city-feature {
+    margin-bottom: 5px;
+   
+}
+
+/*-----------------------
+     testimonials 
+-----------------------*/
+
+.section-testimonials {
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+}
+
+blockquote:before {
+    content: "\201C";
+    font-size: 500%;
+    top: -5px;
+    left: -5px;
+    display: block;
+    position: absolute;
+   
+}
+
+cite {
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+
+cite img {
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
 }
