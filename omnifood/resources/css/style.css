@@ -22,7 +22,7 @@ html {
 
 
 header {
-    background-image: linear-gradient(rgb(0, 0, 0, 0.7) ,rgba(0, 0, 0, 0.7)), url(img/hero.jpg); /* transparent black gradient over the main image to darken */
+    background-image: linear-gradient(rgb(0, 0, 0, 0.7) ,rgba(0, 0, 0, 0.7)), url(img/hero.jpeg); /* transparent black gradient over the main image to darken */
     background-size: cover;
     background-position: center;
     height: 100vh; 
@@ -221,7 +221,7 @@ h2:after {
 
 
 /*-----------------------
-         meals gallery 
+    meals gallery 
 -----------------------*/
 
 .meals-gallery {
@@ -258,4 +258,46 @@ h2:after {
     -webkit-transform: scale(1.03);
     -ms-transform: scale(1.03);
     transform: scale(1.03);
+}
+
+
+/*-----------------------
+    How it works  
+-----------------------*/
+
+
+.steps-box {
+    margin-top: 30px;
+
+
+}
+
+
+
+.steps-box:first-child {
+    text-align: right;
+    padding-right: 3%;
+
+}
+
+.steps-box:last-child{
+    padding-left: 3%;
+
+
+}
+
+.apps-screen {
+    width: 40%;
+}
+
+.work-steps {
+    margin-bottom: 30px;
+}
+
+.work-steps div {
+    color: #e67e22;
+    border: 2px solid  #e67e22;
+    padding: 1%;
+    border-radius: 200px;
+    display: inline-block;
 }
