@@ -21,6 +21,18 @@ html {
 }
 
 
+/* used to clear floats allowing other items below to be positioned correctly */
+.clearfix {
+    zoom: 1;
+}
+.clearfix:after{
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
 header {
     background-image: linear-gradient(rgb(0, 0, 0, 0.7) ,rgba(0, 0, 0, 0.7)), url(img/hero.jpeg); /* transparent black gradient over the main image to darken */
     background-size: cover;
@@ -77,7 +89,7 @@ header {
 
 .main-nav  li a:hover,
 .main-nav  li a:active {
-   border-bottom:  2px solid  rgb(221, 116, 18);;
+   border-bottom:  2px solid  rgb(221, 116, 18);
 }
 /*---------------------------------------------
           Reuseable components 
@@ -119,7 +131,7 @@ h3 {
 h2:after {
     display: block;
     height: 2px;
-    background-color: #e67e22;
+    background-color: rgb(221, 116, 18);
     content: " ";
     width: 100px;
     margin: 0 auto;
@@ -201,7 +213,7 @@ h2:after {
 .icon-big {
     font-size: 350%;
     display: block;
-    color: #e67e22;
+    color:  rgb(221, 116, 18);
     margin-bottom: 10px;
 }
 
@@ -209,7 +221,7 @@ h2:after {
     display: inline-block;
     width: 30px;
     text-align: center;
-    color: #e67e22;
+    color: rgb(221, 116, 18);
     font-size: 120%;
     margin-right: 10px;
     
@@ -264,13 +276,10 @@ h2:after {
 /*-----------------------
     How it works  
 -----------------------*/
-
-
-.steps-box {
-    margin-top: 30px;
-
-
+.section-steps {
+    padding: 80px 1%;
 }
+
 
 
 
@@ -282,6 +291,8 @@ h2:after {
 
 .steps-box:last-child{
     padding-left: 3%;
+    text-align: left;
+    margin-top: 70px;
 
 
 }
@@ -290,14 +301,36 @@ h2:after {
     width: 40%;
 }
 
+.works-step:last-of-type {
+    margin-bottom: 80px;
+}
+
 .work-steps {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+
 }
 
 .work-steps div {
-    color: #e67e22;
-    border: 2px solid  #e67e22;
-    padding: 1%;
-    border-radius: 200px;
+    color: rgb(221, 116, 18);
+    font-size: 150%;
+    height: 54px;
+    width: 54px;
+    border: 2px solid  rgb(221, 116, 18);
+    border-radius: 50%;
     display: inline-block;
+    text-align: center;
+    margin-right: 25px;
+    float: left;
+    padding: 5px;
+}
+
+.btn-app:link,
+.btn-app:visited {
+    border: 0;
+}
+
+.btn-app img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
 }
