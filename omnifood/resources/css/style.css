@@ -488,6 +488,7 @@ cite img {
 
 .section-plans {
     background-color: #f4f4f4;
+    padding: 80px 1%;
 }
 
 .plan-box h3 {
@@ -548,6 +549,11 @@ padding-left: 10px;
 /*-----------------------
      contact form
 -----------------------*/
+.section-form{
+    padding: 80px 1%;
+
+}
+
 .contact-form {
     width: 60%;
     margin: 0 auto;
